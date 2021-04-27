@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42FB909226387BFB002C18D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB909126387BFB002C18D8 /* AppDelegate.swift */; };
+		42FB909426387BFB002C18D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB909326387BFB002C18D8 /* SceneDelegate.swift */; };
+		42FB909626387BFB002C18D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB909526387BFB002C18D8 /* ViewController.swift */; };
+		42FB909926387BFB002C18D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FB909726387BFB002C18D8 /* Main.storyboard */; };
+		42FB909B26387BFC002C18D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42FB909A26387BFC002C18D8 /* Assets.xcassets */; };
+		42FB909E26387BFC002C18D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FB909C26387BFC002C18D8 /* LaunchScreen.storyboard */; };
+		42FB90A926387BFC002C18D8 /* evalyDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB90A826387BFC002C18D8 /* evalyDemoAppTests.swift */; };
+		42FB90B426387BFC002C18D8 /* evalyDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB90B326387BFC002C18D8 /* evalyDemoAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42FB90A526387BFC002C18D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42FB908626387BFB002C18D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42FB908D26387BFB002C18D8;
+			remoteInfo = evalyDemoApp;
+		};
+		42FB90B026387BFC002C18D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42FB908626387BFB002C18D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42FB908D26387BFB002C18D8;
+			remoteInfo = evalyDemoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42FB908E26387BFB002C18D8 /* evalyDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = evalyDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42FB909126387BFB002C18D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42FB909326387BFB002C18D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		42FB909526387BFB002C18D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42FB909826387BFB002C18D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42FB909A26387BFC002C18D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42FB909D26387BFC002C18D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42FB909F26387BFC002C18D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42FB90A426387BFC002C18D8 /* evalyDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = evalyDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42FB90A826387BFC002C18D8 /* evalyDemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = evalyDemoAppTests.swift; sourceTree = "<group>"; };
+		42FB90AA26387BFC002C18D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42FB90AF26387BFC002C18D8 /* evalyDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = evalyDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42FB90B326387BFC002C18D8 /* evalyDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = evalyDemoAppUITests.swift; sourceTree = "<group>"; };
+		42FB90B526387BFC002C18D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42FB908B26387BFB002C18D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FB90A126387BFC002C18D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FB90AC26387BFC002C18D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42FB908526387BFB002C18D8 = {
+			isa = PBXGroup;
+			children = (
+				42FB909026387BFB002C18D8 /* evalyDemoApp */,
+				42FB90A726387BFC002C18D8 /* evalyDemoAppTests */,
+				42FB90B226387BFC002C18D8 /* evalyDemoAppUITests */,
+				42FB908F26387BFB002C18D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42FB908F26387BFB002C18D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42FB908E26387BFB002C18D8 /* evalyDemoApp.app */,
+				42FB90A426387BFC002C18D8 /* evalyDemoAppTests.xctest */,
+				42FB90AF26387BFC002C18D8 /* evalyDemoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42FB909026387BFB002C18D8 /* evalyDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				42FB909126387BFB002C18D8 /* AppDelegate.swift */,
+				42FB909326387BFB002C18D8 /* SceneDelegate.swift */,
+				42FB909526387BFB002C18D8 /* ViewController.swift */,
+				42FB909726387BFB002C18D8 /* Main.storyboard */,
+				42FB909A26387BFC002C18D8 /* Assets.xcassets */,
+				42FB909C26387BFC002C18D8 /* LaunchScreen.storyboard */,
+				42FB909F26387BFC002C18D8 /* Info.plist */,
+			);
+			path = evalyDemoApp;
+			sourceTree = "<group>";
+		};
+		42FB90A726387BFC002C18D8 /* evalyDemoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				42FB90A826387BFC002C18D8 /* evalyDemoAppTests.swift */,
+				42FB90AA26387BFC002C18D8 /* Info.plist */,
+			);
+			path = evalyDemoAppTests;
+			sourceTree = "<group>";
+		};
+		42FB90B226387BFC002C18D8 /* evalyDemoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				42FB90B326387BFC002C18D8 /* evalyDemoAppUITests.swift */,
+				42FB90B526387BFC002C18D8 /* Info.plist */,
+			);
+			path = evalyDemoAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42FB908D26387BFB002C18D8 /* evalyDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42FB90B826387BFC002C18D8 /* Build configuration list for PBXNativeTarget "evalyDemoApp" */;
+			buildPhases = (
+				42FB908A26387BFB002C18D8 /* Sources */,
+				42FB908B26387BFB002C18D8 /* Frameworks */,
+				42FB908C26387BFB002C18D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = evalyDemoApp;
+			productName = evalyDemoApp;
+			productReference = 42FB908E26387BFB002C18D8 /* evalyDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42FB90A326387BFC002C18D8 /* evalyDemoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42FB90BB26387BFC002C18D8 /* Build configuration list for PBXNativeTarget "evalyDemoAppTests" */;
+			buildPhases = (
+				42FB90A026387BFC002C18D8 /* Sources */,
+				42FB90A126387BFC002C18D8 /* Frameworks */,
+				42FB90A226387BFC002C18D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42FB90A626387BFC002C18D8 /* PBXTargetDependency */,
+			);
+			name = evalyDemoAppTests;
+			productName = evalyDemoAppTests;
+			productReference = 42FB90A426387BFC002C18D8 /* evalyDemoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		42FB90AE26387BFC002C18D8 /* evalyDemoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42FB90BE26387BFC002C18D8 /* Build configuration list for PBXNativeTarget "evalyDemoAppUITests" */;
+			buildPhases = (
+				42FB90AB26387BFC002C18D8 /* Sources */,
+				42FB90AC26387BFC002C18D8 /* Frameworks */,
+				42FB90AD26387BFC002C18D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42FB90B126387BFC002C18D8 /* PBXTargetDependency */,
+			);
+			name = evalyDemoAppUITests;
+			productName = evalyDemoAppUITests;
+			productReference = 42FB90AF26387BFC002C18D8 /* evalyDemoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42FB908626387BFB002C18D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					42FB908D26387BFB002C18D8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					42FB90A326387BFC002C18D8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 42FB908D26387BFB002C18D8;
+					};
+					42FB90AE26387BFC002C18D8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 42FB908D26387BFB002C18D8;
+					};
+				};
+			};
+			buildConfigurationList = 42FB908926387BFB002C18D8 /* Build configuration list for PBXProject "evalyDemoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42FB908526387BFB002C18D8;
+			productRefGroup = 42FB908F26387BFB002C18D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42FB908D26387BFB002C18D8 /* evalyDemoApp */,
+				42FB90A326387BFC002C18D8 /* evalyDemoAppTests */,
+				42FB90AE26387BFC002C18D8 /* evalyDemoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42FB908C26387BFB002C18D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FB909E26387BFC002C18D8 /* LaunchScreen.storyboard in Resources */,
+				42FB909B26387BFC002C18D8 /* Assets.xcassets in Resources */,
+				42FB909926387BFB002C18D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FB90A226387BFC002C18D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FB90AD26387BFC002C18D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42FB908A26387BFB002C18D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FB909626387BFB002C18D8 /* ViewController.swift in Sources */,
+				42FB909226387BFB002C18D8 /* AppDelegate.swift in Sources */,
+				42FB909426387BFB002C18D8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FB90A026387BFC002C18D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FB90A926387BFC002C18D8 /* evalyDemoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FB90AB26387BFC002C18D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FB90B426387BFC002C18D8 /* evalyDemoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42FB90A626387BFC002C18D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42FB908D26387BFB002C18D8 /* evalyDemoApp */;
+			targetProxy = 42FB90A526387BFC002C18D8 /* PBXContainerItemProxy */;
+		};
+		42FB90B126387BFC002C18D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42FB908D26387BFB002C18D8 /* evalyDemoApp */;
+			targetProxy = 42FB90B026387BFC002C18D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42FB909726387BFB002C18D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42FB909826387BFB002C18D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42FB909C26387BFC002C18D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42FB909D26387BFC002C18D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42FB90B626387BFC002C18D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42FB90B726387BFC002C18D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42FB90B926387BFC002C18D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = evalyDemoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mamun.evalyDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42FB90BA26387BFC002C18D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = evalyDemoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mamun.evalyDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		42FB90BC26387BFC002C18D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = evalyDemoAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mamun.evalyDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/evalyDemoApp.app/evalyDemoApp";
+			};
+			name = Debug;
+		};
+		42FB90BD26387BFC002C18D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = evalyDemoAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mamun.evalyDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/evalyDemoApp.app/evalyDemoApp";
+			};
+			name = Release;
+		};
+		42FB90BF26387BFC002C18D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = evalyDemoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mamun.evalyDemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = evalyDemoApp;
+			};
+			name = Debug;
+		};
+		42FB90C026387BFC002C18D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = evalyDemoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mamun.evalyDemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = evalyDemoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42FB908926387BFB002C18D8 /* Build configuration list for PBXProject "evalyDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42FB90B626387BFC002C18D8 /* Debug */,
+				42FB90B726387BFC002C18D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42FB90B826387BFC002C18D8 /* Build configuration list for PBXNativeTarget "evalyDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42FB90B926387BFC002C18D8 /* Debug */,
+				42FB90BA26387BFC002C18D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42FB90BB26387BFC002C18D8 /* Build configuration list for PBXNativeTarget "evalyDemoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42FB90BC26387BFC002C18D8 /* Debug */,
+				42FB90BD26387BFC002C18D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42FB90BE26387BFC002C18D8 /* Build configuration list for PBXNativeTarget "evalyDemoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42FB90BF26387BFC002C18D8 /* Debug */,
+				42FB90C026387BFC002C18D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42FB908626387BFB002C18D8 /* Project object */;
+}
