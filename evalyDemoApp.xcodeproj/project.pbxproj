@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42A0791C26393E4B0065F4C3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A0791B26393E4B0065F4C3 /* Extensions.swift */; };
+		42A0792426393E9F0065F4C3 /* TopShopsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A0792326393E9F0065F4C3 /* TopShopsModel.swift */; };
+		42A0792926393EB00065F4C3 /* TopBrandsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A0792826393EB00065F4C3 /* TopBrandsModel.swift */; };
+		42A0792E26393ECB0065F4C3 /* TopProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A0792D26393ECB0065F4C3 /* TopProductsModel.swift */; };
 		42FB909226387BFB002C18D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB909126387BFB002C18D8 /* AppDelegate.swift */; };
 		42FB909426387BFB002C18D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB909326387BFB002C18D8 /* SceneDelegate.swift */; };
 		42FB909626387BFB002C18D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB909526387BFB002C18D8 /* ViewController.swift */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42A0791B26393E4B0065F4C3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		42A0792326393E9F0065F4C3 /* TopShopsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopShopsModel.swift; sourceTree = "<group>"; };
+		42A0792826393EB00065F4C3 /* TopBrandsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBrandsModel.swift; sourceTree = "<group>"; };
+		42A0792D26393ECB0065F4C3 /* TopProductsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopProductsModel.swift; sourceTree = "<group>"; };
 		42FB908E26387BFB002C18D8 /* evalyDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = evalyDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FB909126387BFB002C18D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42FB909326387BFB002C18D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42A0791A26393E2A0065F4C3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				42A0791B26393E4B0065F4C3 /* Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		42FB908526387BFB002C18D8 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +121,7 @@
 		42FB909026387BFB002C18D8 /* evalyDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				42A0791A26393E2A0065F4C3 /* Extension */,
 				42FB90C92638A541002C18D8 /* Controller */,
 				42FB90C82638A539002C18D8 /* View */,
 				42FB90C72638A531002C18D8 /* Model */,
@@ -138,6 +155,9 @@
 		42FB90C72638A531002C18D8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				42A0792326393E9F0065F4C3 /* TopShopsModel.swift */,
+				42A0792826393EB00065F4C3 /* TopBrandsModel.swift */,
+				42A0792D26393ECB0065F4C3 /* TopProductsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,11 +320,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				42FB90D72638AC3C002C18D8 /* TopBrandsCollectionViewCell.swift in Sources */,
+				42A0792926393EB00065F4C3 /* TopBrandsModel.swift in Sources */,
 				42FB90D22638AC2A002C18D8 /* TopShopsCollectionViewCell.swift in Sources */,
 				42FB90DC2638AC4D002C18D8 /* TopProductsCollectionViewCell.swift in Sources */,
 				42FB909626387BFB002C18D8 /* ViewController.swift in Sources */,
+				42A0792E26393ECB0065F4C3 /* TopProductsModel.swift in Sources */,
 				42FB909226387BFB002C18D8 /* AppDelegate.swift in Sources */,
 				42FB909426387BFB002C18D8 /* SceneDelegate.swift in Sources */,
+				42A0791C26393E4B0065F4C3 /* Extensions.swift in Sources */,
+				42A0792426393E9F0065F4C3 /* TopShopsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
