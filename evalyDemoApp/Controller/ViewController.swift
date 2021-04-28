@@ -15,10 +15,14 @@ class ViewController: UIViewController,UICollectionViewDataSource {
     @IBOutlet weak var TopBrandsCollectionView: UICollectionView!
     @IBOutlet weak var TopProductsCollectionView: UICollectionView!
     @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var loadMoreButton: UIButton!
     
     var shopImage = ""
     var brandImage = ""
     var productImage = ""
+    var shopModel = [Data]()
+    var brandModel = [BrandData]()
+    var productModel = [ProductsData]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,17 +32,27 @@ class ViewController: UIViewController,UICollectionViewDataSource {
         TopBrandsCollectionView.delegate = self
         TopProductsCollectionView.dataSource = self
         TopProductsCollectionView.delegate = self
-        createTabBar()
+        createUI()
+        
+     
+    }
+    func createUI(){
+        bottomView.layer.cornerRadius = 15
+        bottomView.clipsToBounds = true
+        loadMoreButton.layer.cornerRadius = 20
+        loadMoreButton.clipsToBounds = true
+        loadMoreButton.layer.borderWidth = 1
+        loadMoreButton.layer.borderColor = UIColor.white.cgColor
+        
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
                 layout.sectionInset = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
                 layout.minimumInteritemSpacing = 0
                 layout.minimumLineSpacing = 0
         TopBrandsCollectionView.collectionViewLayout = layout
-     
     }
-    func createTabBar(){
-        bottomView.layer.cornerRadius = 15
-        bottomView.clipsToBounds = true
+    
+    @IBAction func loadMoreClicked(_ sender: Any) {
+        print("Can not do that Function!")
     }
     override func loadView() {
         super.loadView()
@@ -59,12 +73,28 @@ class ViewController: UIViewController,UICollectionViewDataSource {
             if 200 ... 300 ~= statusCodeUnwrapped {
                 print("Treshold")
                 
+                
+                
                 let shopDataResponseValue = response.result.value!
-                let myData = shopDataResponseValue.data?[0]
-                let image = myData?.logo_image!
-                self.shopImage = image!
-                print(self.shopImage)
-                print(response)
+                //self.shopModel = shopDataResponseValue.data
+//                let myData = shopDataResponseValue.data?[0]
+//                let image = myData?.logo_image!
+//                self.shopImage = image!
+//                print(self.shopImage)
+//                print(response)
+                guard let topShopData = shopDataResponseValue.data else {
+                    self.shopModel.removeAll()
+                    self.TopShopsCollectionView.reloadData()
+                    return
+                }
+
+                //success
+                self.shopModel = topShopData
+                self.TopShopsCollectionView.reloadData()
+                
+                
+//                print(self.shopModel.count)
+//                self.TopShopsCollectionView.reloadData()
                 self.callTopBrands()
                
             } else {
@@ -93,12 +123,25 @@ class ViewController: UIViewController,UICollectionViewDataSource {
                 print("Treshold")
                 
                  let brandsDataResponseValue = response.result.value!
-                let myData = brandsDataResponseValue.data?[0]
-                let image = myData?.image_url!
-                self.brandImage = image!
-                print(self.brandImage)
-                print(myData)
-                print(response)
+                //self.brandModel = brandsDataResponseValue.data
+//                let myData = brandsDataResponseValue.data?[0]
+//                let image = myData?.image_url!
+//                self.brandImage = image!
+//                print(self.brandImage)
+//                print(myData)
+//                print(response)
+                
+                guard let topBrandData = brandsDataResponseValue.data else {
+                    self.brandModel.removeAll()
+                    self.TopBrandsCollectionView.reloadData()
+                    return
+                }
+
+                //success
+                self.brandModel = topBrandData
+                self.TopBrandsCollectionView.reloadData()
+                
+                //self.TopBrandsCollectionView.reloadData()
                 self.callTopProducts()
                
             } else {
@@ -126,12 +169,24 @@ class ViewController: UIViewController,UICollectionViewDataSource {
             if 200 ... 300 ~= statusCodeUnwrapped {
                 print("Treshold")
                 let productsDataResponseValue = response.result.value!
-                let myData = productsDataResponseValue.data?[0]
-                let image = myData?.image_urls?[0]
-                self.productImage = image!
-                print(image)
-                print(myData)
-                print(response)
+                //self.productModel = productsDataResponseValue.data
+//                let myData = productsDataResponseValue.data?[0]
+//                let image = myData?.image_urls?[0]
+//                self.productImage = image!
+//                print(image)
+//                print(myData)
+//                print(response)
+                guard let topProductData = productsDataResponseValue.data else {
+                    self.productModel.removeAll()
+                    self.TopProductsCollectionView.reloadData()
+                    return
+                }
+
+                //success
+                self.productModel = topProductData
+                self.TopProductsCollectionView.reloadData()
+
+               // self.TopProductsCollectionView.reloadData()
                
             } else {
                 
@@ -144,21 +199,27 @@ class ViewController: UIViewController,UICollectionViewDataSource {
 extension ViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if(collectionView==TopShopsCollectionView){
-            return 10
+            return shopModel.count
         }else if(collectionView==TopBrandsCollectionView){
-            return 12
+            return brandModel.count
         }
         else{
-            return 10
+            return productModel.count
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if(collectionView==TopShopsCollectionView){
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "topShops", for: indexPath as IndexPath) as! TopShopsCollectionViewCell
+            let row = indexPath.row
+            //var index : Int = indexPath[1]
+            //print(self.shopModel![index].logo_image)
+           // print(self.shopModel)
             cell.topShopsImage.contentMode = .scaleAspectFit
             //cell.topShopsImage.image = UIImage(named:"home")!
-            cell.topShopsImage.downloaded(from: shopImage)
+            //shopModel![indexPath.item].title
+            let data = shopModel[row]
+            cell.topShopsImage.downloaded(from:  data.logo_image!)
             cell.topShopsName.text = "Apple"
             cell.subView.layer.cornerRadius = 14
             
@@ -167,9 +228,11 @@ extension ViewController: UICollectionViewDelegate{
         }
         else if(collectionView==TopBrandsCollectionView){
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "topBrands", for: indexPath as IndexPath) as! TopBrandsCollectionViewCell
+            let row = indexPath.row
             cell.topBrandsImage.contentMode = .scaleToFill
             //cell.topBrandsImage.image = UIImage(named:"notification")!
-            cell.topBrandsImage.downloaded(from: brandImage)
+            let data = brandModel[row]
+            cell.topBrandsImage.downloaded(from: data.image_url!)
             cell.topBrandsName.text = "AppleBrands"
             cell.subView.layer.cornerRadius = 12
             return cell
@@ -177,8 +240,10 @@ extension ViewController: UICollectionViewDelegate{
         }
         else{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "topProducts", for: indexPath as IndexPath) as! TopProductsCollectionViewCell
+            let row = indexPath.row
             cell.topProductsImage.contentMode = .scaleToFill
-            cell.topProductsImage.downloaded(from: productImage)
+            let data = productModel[row]
+            cell.topProductsImage.downloaded(from: (data.image_urls?[0])!)
             cell.topProductsName.text = "AppleBrands"
             cell.topProductsMaxPrice.text = "৳ 1500"
             cell.topProductsSalePrice.text = "৳ 1000"

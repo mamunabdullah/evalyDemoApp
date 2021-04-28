@@ -148,6 +148,9 @@
                                                 <state key="normal" title="Load More Brands">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="loadMoreClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p6Z-oB-fRE"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Products" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxA-Ab-g3u">
                                                 <rect key="frame" x="25" y="493" width="105.5" height="25"/>
@@ -495,6 +498,7 @@
                         <outlet property="TopProductsCollectionView" destination="aCR-kp-ud8" id="UU8-zP-7hq"/>
                         <outlet property="TopShopsCollectionView" destination="gr8-DO-o1U" id="9qd-EK-dYa"/>
                         <outlet property="bottomView" destination="Fsb-Ex-ShI" id="nHU-uG-IcL"/>
+                        <outlet property="loadMoreButton" destination="hTC-dy-QjW" id="1cv-Sy-1fK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
