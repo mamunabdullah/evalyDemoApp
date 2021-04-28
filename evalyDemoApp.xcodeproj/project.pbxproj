@@ -15,6 +15,9 @@
 		42FB909E26387BFC002C18D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FB909C26387BFC002C18D8 /* LaunchScreen.storyboard */; };
 		42FB90A926387BFC002C18D8 /* evalyDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB90A826387BFC002C18D8 /* evalyDemoAppTests.swift */; };
 		42FB90B426387BFC002C18D8 /* evalyDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB90B326387BFC002C18D8 /* evalyDemoAppUITests.swift */; };
+		42FB90D22638AC2A002C18D8 /* TopShopsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB90D12638AC2A002C18D8 /* TopShopsCollectionViewCell.swift */; };
+		42FB90D72638AC3C002C18D8 /* TopBrandsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB90D62638AC3C002C18D8 /* TopBrandsCollectionViewCell.swift */; };
+		42FB90DC2638AC4D002C18D8 /* TopProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB90DB2638AC4D002C18D8 /* TopProductsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		42FB90AF26387BFC002C18D8 /* evalyDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = evalyDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FB90B326387BFC002C18D8 /* evalyDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = evalyDemoAppUITests.swift; sourceTree = "<group>"; };
 		42FB90B526387BFC002C18D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42FB90D12638AC2A002C18D8 /* TopShopsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopShopsCollectionViewCell.swift; sourceTree = "<group>"; };
+		42FB90D62638AC3C002C18D8 /* TopBrandsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBrandsCollectionViewCell.swift; sourceTree = "<group>"; };
+		42FB90DB2638AC4D002C18D8 /* TopProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopProductsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,11 @@
 		42FB909026387BFB002C18D8 /* evalyDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				42FB90C92638A541002C18D8 /* Controller */,
+				42FB90C82638A539002C18D8 /* View */,
+				42FB90C72638A531002C18D8 /* Model */,
 				42FB909126387BFB002C18D8 /* AppDelegate.swift */,
 				42FB909326387BFB002C18D8 /* SceneDelegate.swift */,
-				42FB909526387BFB002C18D8 /* ViewController.swift */,
-				42FB909726387BFB002C18D8 /* Main.storyboard */,
 				42FB909A26387BFC002C18D8 /* Assets.xcassets */,
 				42FB909C26387BFC002C18D8 /* LaunchScreen.storyboard */,
 				42FB909F26387BFC002C18D8 /* Info.plist */,
@@ -126,6 +133,40 @@
 				42FB90B526387BFC002C18D8 /* Info.plist */,
 			);
 			path = evalyDemoAppUITests;
+			sourceTree = "<group>";
+		};
+		42FB90C72638A531002C18D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42FB90C82638A539002C18D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42FB909726387BFB002C18D8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42FB90C92638A541002C18D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42FB90CD2638AB86002C18D8 /* Cells */,
+				42FB909526387BFB002C18D8 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42FB90CD2638AB86002C18D8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				42FB90D12638AC2A002C18D8 /* TopShopsCollectionViewCell.swift */,
+				42FB90D62638AC3C002C18D8 /* TopBrandsCollectionViewCell.swift */,
+				42FB90DB2638AC4D002C18D8 /* TopProductsCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42FB90D72638AC3C002C18D8 /* TopBrandsCollectionViewCell.swift in Sources */,
+				42FB90D22638AC2A002C18D8 /* TopShopsCollectionViewCell.swift in Sources */,
+				42FB90DC2638AC4D002C18D8 /* TopProductsCollectionViewCell.swift in Sources */,
 				42FB909626387BFB002C18D8 /* ViewController.swift in Sources */,
 				42FB909226387BFB002C18D8 /* AppDelegate.swift in Sources */,
 				42FB909426387BFB002C18D8 /* SceneDelegate.swift in Sources */,
