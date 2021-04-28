@@ -17,6 +17,7 @@ class ViewController: UIViewController,UICollectionViewDataSource {
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var loadMoreButton: UIButton!
     
+    
     var shopImage = ""
     var brandImage = ""
     var productImage = ""
@@ -220,7 +221,8 @@ extension ViewController: UICollectionViewDelegate{
             //shopModel![indexPath.item].title
             let data = shopModel[row]
             cell.topShopsImage.downloaded(from:  data.logo_image!)
-            cell.topShopsName.text = "Apple"
+            cell.topShopsName.numberOfLines = 0
+            cell.topShopsName.text = data.shop_name
             cell.subView.layer.cornerRadius = 14
             
             return cell
@@ -233,7 +235,7 @@ extension ViewController: UICollectionViewDelegate{
             //cell.topBrandsImage.image = UIImage(named:"notification")!
             let data = brandModel[row]
             cell.topBrandsImage.downloaded(from: data.image_url!)
-            cell.topBrandsName.text = "AppleBrands"
+            cell.topBrandsName.text = data.name
             cell.subView.layer.cornerRadius = 12
             return cell
             
@@ -244,10 +246,10 @@ extension ViewController: UICollectionViewDelegate{
             cell.topProductsImage.contentMode = .scaleToFill
             let data = productModel[row]
             cell.topProductsImage.downloaded(from: (data.image_urls?[0])!)
-            cell.topProductsName.text = "AppleBrands"
-            cell.topProductsMaxPrice.text = "৳ 1500"
-            cell.topProductsSalePrice.text = "৳ 1000"
-            cell.subView.layer.cornerRadius = 8
+            cell.topProductsName.text = data.name
+            cell.topProductsMaxPrice.text = "৳ \(data.max_price!)"
+            cell.topProductsSalePrice.text = "৳ \(data.min_discounted_price!)"
+            cell.subView.layer.cornerRadius = 12
             return cell
         }
        
@@ -273,12 +275,6 @@ extension ViewController: UICollectionViewDelegateFlowLayout{
         }
         return cgSize
        }
-//    func collectionView(_ collectionView: UICollectionView,
-//                                layout collectionViewLayout: UICollectionViewLayout,
-//                                minimumInteritemSpacingForSectionAt section: Int) ->CGFloat{
-//                return 5.0
-//            }
-//
     func collectionView(_ collectionView: UICollectionView, layout
                 collectionViewLayout: UICollectionViewLayout,
                                 minimumLineSpacingForSectionAt section: Int) -> CGFloat {
