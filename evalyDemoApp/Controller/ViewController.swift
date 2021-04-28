@@ -14,6 +14,7 @@ class ViewController: UIViewController,UICollectionViewDataSource {
     @IBOutlet weak var TopShopsCollectionView: UICollectionView!
     @IBOutlet weak var TopBrandsCollectionView: UICollectionView!
     @IBOutlet weak var TopProductsCollectionView: UICollectionView!
+    @IBOutlet weak var bottomView: UIView!
     
     var shopImage = ""
     var brandImage = ""
@@ -27,13 +28,17 @@ class ViewController: UIViewController,UICollectionViewDataSource {
         TopBrandsCollectionView.delegate = self
         TopProductsCollectionView.dataSource = self
         TopProductsCollectionView.delegate = self
-        
+        createTabBar()
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
                 layout.sectionInset = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
                 layout.minimumInteritemSpacing = 0
                 layout.minimumLineSpacing = 0
         TopBrandsCollectionView.collectionViewLayout = layout
      
+    }
+    func createTabBar(){
+        bottomView.layer.cornerRadius = 15
+        bottomView.clipsToBounds = true
     }
     override func loadView() {
         super.loadView()
