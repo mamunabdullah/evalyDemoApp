@@ -73,29 +73,14 @@ class ViewController: UIViewController,UICollectionViewDataSource {
             
             if 200 ... 300 ~= statusCodeUnwrapped {
                 print("Treshold")
-                
-                
-                
                 let shopDataResponseValue = response.result.value!
-                //self.shopModel = shopDataResponseValue.data
-//                let myData = shopDataResponseValue.data?[0]
-//                let image = myData?.logo_image!
-//                self.shopImage = image!
-//                print(self.shopImage)
-//                print(response)
                 guard let topShopData = shopDataResponseValue.data else {
                     self.shopModel.removeAll()
                     self.TopShopsCollectionView.reloadData()
                     return
                 }
-
-                //success
                 self.shopModel = topShopData
                 self.TopShopsCollectionView.reloadData()
-                
-                
-//                print(self.shopModel.count)
-//                self.TopShopsCollectionView.reloadData()
                 self.callTopBrands()
                
             } else {
@@ -124,25 +109,14 @@ class ViewController: UIViewController,UICollectionViewDataSource {
                 print("Treshold")
                 
                  let brandsDataResponseValue = response.result.value!
-                //self.brandModel = brandsDataResponseValue.data
-//                let myData = brandsDataResponseValue.data?[0]
-//                let image = myData?.image_url!
-//                self.brandImage = image!
-//                print(self.brandImage)
-//                print(myData)
-//                print(response)
                 
                 guard let topBrandData = brandsDataResponseValue.data else {
                     self.brandModel.removeAll()
                     self.TopBrandsCollectionView.reloadData()
                     return
                 }
-
-                //success
                 self.brandModel = topBrandData
                 self.TopBrandsCollectionView.reloadData()
-                
-                //self.TopBrandsCollectionView.reloadData()
                 self.callTopProducts()
                
             } else {
@@ -170,25 +144,13 @@ class ViewController: UIViewController,UICollectionViewDataSource {
             if 200 ... 300 ~= statusCodeUnwrapped {
                 print("Treshold")
                 let productsDataResponseValue = response.result.value!
-                //self.productModel = productsDataResponseValue.data
-//                let myData = productsDataResponseValue.data?[0]
-//                let image = myData?.image_urls?[0]
-//                self.productImage = image!
-//                print(image)
-//                print(myData)
-//                print(response)
                 guard let topProductData = productsDataResponseValue.data else {
                     self.productModel.removeAll()
                     self.TopProductsCollectionView.reloadData()
                     return
                 }
-
-                //success
                 self.productModel = topProductData
                 self.TopProductsCollectionView.reloadData()
-
-               // self.TopProductsCollectionView.reloadData()
-               
             } else {
                 
             }
@@ -213,12 +175,7 @@ extension ViewController: UICollectionViewDelegate{
         if(collectionView==TopShopsCollectionView){
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "topShops", for: indexPath as IndexPath) as! TopShopsCollectionViewCell
             let row = indexPath.row
-            //var index : Int = indexPath[1]
-            //print(self.shopModel![index].logo_image)
-           // print(self.shopModel)
             cell.topShopsImage.contentMode = .scaleAspectFit
-            //cell.topShopsImage.image = UIImage(named:"home")!
-            //shopModel![indexPath.item].title
             let data = shopModel[row]
             cell.topShopsImage.downloaded(from:  data.logo_image!)
             cell.topShopsName.numberOfLines = 0
@@ -232,9 +189,9 @@ extension ViewController: UICollectionViewDelegate{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "topBrands", for: indexPath as IndexPath) as! TopBrandsCollectionViewCell
             let row = indexPath.row
             cell.topBrandsImage.contentMode = .scaleToFill
-            //cell.topBrandsImage.image = UIImage(named:"notification")!
             let data = brandModel[row]
             cell.topBrandsImage.downloaded(from: data.image_url!)
+            cell.topBrandsName.numberOfLines = 0
             cell.topBrandsName.text = data.name
             cell.subView.layer.cornerRadius = 12
             return cell
@@ -246,6 +203,7 @@ extension ViewController: UICollectionViewDelegate{
             cell.topProductsImage.contentMode = .scaleToFill
             let data = productModel[row]
             cell.topProductsImage.downloaded(from: (data.image_urls?[0])!)
+            cell.topProductsName.numberOfLines = 0
             cell.topProductsName.text = data.name
             cell.topProductsMaxPrice.text = "৳ \(data.max_price!)"
             cell.topProductsSalePrice.text = "৳ \(data.min_discounted_price!)"
