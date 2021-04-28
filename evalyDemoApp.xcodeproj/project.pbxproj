@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09EFE065AE584D8040B074E0 /* Pods_evalyDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B5399FEC2749FBFC1C933C /* Pods_evalyDemoApp.framework */; };
+		3632F9E9C97282E4257A90D9 /* Pods_evalyDemoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07166270DE0250B37AE272E9 /* Pods_evalyDemoAppTests.framework */; };
 		42A0791C26393E4B0065F4C3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A0791B26393E4B0065F4C3 /* Extensions.swift */; };
 		42A0792426393E9F0065F4C3 /* TopShopsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A0792326393E9F0065F4C3 /* TopShopsModel.swift */; };
 		42A0792926393EB00065F4C3 /* TopBrandsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A0792826393EB00065F4C3 /* TopBrandsModel.swift */; };
@@ -22,6 +24,7 @@
 		42FB90D22638AC2A002C18D8 /* TopShopsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB90D12638AC2A002C18D8 /* TopShopsCollectionViewCell.swift */; };
 		42FB90D72638AC3C002C18D8 /* TopBrandsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB90D62638AC3C002C18D8 /* TopBrandsCollectionViewCell.swift */; };
 		42FB90DC2638AC4D002C18D8 /* TopProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB90DB2638AC4D002C18D8 /* TopProductsCollectionViewCell.swift */; };
+		F9FE905E5FE9933838769FF2 /* Pods_evalyDemoApp_evalyDemoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84A4BD73C184A9EFAB68558 /* Pods_evalyDemoApp_evalyDemoAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07166270DE0250B37AE272E9 /* Pods_evalyDemoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_evalyDemoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		316E03A1E734F9571E579A78 /* Pods-evalyDemoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evalyDemoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-evalyDemoAppTests/Pods-evalyDemoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		42A0791B26393E4B0065F4C3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		42A0792326393E9F0065F4C3 /* TopShopsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopShopsModel.swift; sourceTree = "<group>"; };
 		42A0792826393EB00065F4C3 /* TopBrandsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBrandsModel.swift; sourceTree = "<group>"; };
@@ -63,6 +68,13 @@
 		42FB90D12638AC2A002C18D8 /* TopShopsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopShopsCollectionViewCell.swift; sourceTree = "<group>"; };
 		42FB90D62638AC3C002C18D8 /* TopBrandsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBrandsCollectionViewCell.swift; sourceTree = "<group>"; };
 		42FB90DB2638AC4D002C18D8 /* TopProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopProductsCollectionViewCell.swift; sourceTree = "<group>"; };
+		4A048499BDCDF297D61197B8 /* Pods-evalyDemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evalyDemoAppTests.release.xcconfig"; path = "Target Support Files/Pods-evalyDemoAppTests/Pods-evalyDemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2B5399FEC2749FBFC1C933C /* Pods_evalyDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_evalyDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76BEBAD6FEA61F3C420F4FD /* Pods-evalyDemoApp-evalyDemoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evalyDemoApp-evalyDemoAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-evalyDemoApp-evalyDemoAppUITests/Pods-evalyDemoApp-evalyDemoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A84A4BD73C184A9EFAB68558 /* Pods_evalyDemoApp_evalyDemoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_evalyDemoApp_evalyDemoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB949F0EB312E93E0AB38470 /* Pods-evalyDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evalyDemoApp.debug.xcconfig"; path = "Target Support Files/Pods-evalyDemoApp/Pods-evalyDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D0C6E3744B30DE03815E5A04 /* Pods-evalyDemoApp-evalyDemoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evalyDemoApp-evalyDemoAppUITests.release.xcconfig"; path = "Target Support Files/Pods-evalyDemoApp-evalyDemoAppUITests/Pods-evalyDemoApp-evalyDemoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E056295FEA58F54BB49ACAC0 /* Pods-evalyDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evalyDemoApp.release.xcconfig"; path = "Target Support Files/Pods-evalyDemoApp/Pods-evalyDemoApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09EFE065AE584D8040B074E0 /* Pods_evalyDemoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3632F9E9C97282E4257A90D9 /* Pods_evalyDemoAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +98,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FE905E5FE9933838769FF2 /* Pods_evalyDemoApp_evalyDemoAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		279494BFC216B5BF4BE74AE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2B5399FEC2749FBFC1C933C /* Pods_evalyDemoApp.framework */,
+				A84A4BD73C184A9EFAB68558 /* Pods_evalyDemoApp_evalyDemoAppUITests.framework */,
+				07166270DE0250B37AE272E9 /* Pods_evalyDemoAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		42A0791A26393E2A0065F4C3 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +130,8 @@
 				42FB90A726387BFC002C18D8 /* evalyDemoAppTests */,
 				42FB90B226387BFC002C18D8 /* evalyDemoAppUITests */,
 				42FB908F26387BFB002C18D8 /* Products */,
+				A7D54CBEECB9507BDFE7D3E1 /* Pods */,
+				279494BFC216B5BF4BE74AE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,6 +216,20 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		A7D54CBEECB9507BDFE7D3E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB949F0EB312E93E0AB38470 /* Pods-evalyDemoApp.debug.xcconfig */,
+				E056295FEA58F54BB49ACAC0 /* Pods-evalyDemoApp.release.xcconfig */,
+				A76BEBAD6FEA61F3C420F4FD /* Pods-evalyDemoApp-evalyDemoAppUITests.debug.xcconfig */,
+				D0C6E3744B30DE03815E5A04 /* Pods-evalyDemoApp-evalyDemoAppUITests.release.xcconfig */,
+				316E03A1E734F9571E579A78 /* Pods-evalyDemoAppTests.debug.xcconfig */,
+				4A048499BDCDF297D61197B8 /* Pods-evalyDemoAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -196,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42FB90B826387BFC002C18D8 /* Build configuration list for PBXNativeTarget "evalyDemoApp" */;
 			buildPhases = (
+				A2A14375FC37F99F3D25E038 /* [CP] Check Pods Manifest.lock */,
 				42FB908A26387BFB002C18D8 /* Sources */,
 				42FB908B26387BFB002C18D8 /* Frameworks */,
 				42FB908C26387BFB002C18D8 /* Resources */,
+				F911079D0261913B0BAA95B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +256,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42FB90BB26387BFC002C18D8 /* Build configuration list for PBXNativeTarget "evalyDemoAppTests" */;
 			buildPhases = (
+				9FDD2C672D36B30010C8D57C /* [CP] Check Pods Manifest.lock */,
 				42FB90A026387BFC002C18D8 /* Sources */,
 				42FB90A126387BFC002C18D8 /* Frameworks */,
 				42FB90A226387BFC002C18D8 /* Resources */,
@@ -231,9 +275,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42FB90BE26387BFC002C18D8 /* Build configuration list for PBXNativeTarget "evalyDemoAppUITests" */;
 			buildPhases = (
+				8D078EE29976DAB4D17EE122 /* [CP] Check Pods Manifest.lock */,
 				42FB90AB26387BFC002C18D8 /* Sources */,
 				42FB90AC26387BFC002C18D8 /* Frameworks */,
 				42FB90AD26387BFC002C18D8 /* Resources */,
+				1493A61724D5D9A68C9CF06E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -313,6 +359,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1493A61724D5D9A68C9CF06E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-evalyDemoApp-evalyDemoAppUITests/Pods-evalyDemoApp-evalyDemoAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-evalyDemoApp-evalyDemoAppUITests/Pods-evalyDemoApp-evalyDemoAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-evalyDemoApp-evalyDemoAppUITests/Pods-evalyDemoApp-evalyDemoAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D078EE29976DAB4D17EE122 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-evalyDemoApp-evalyDemoAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FDD2C672D36B30010C8D57C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-evalyDemoAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2A14375FC37F99F3D25E038 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-evalyDemoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F911079D0261913B0BAA95B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-evalyDemoApp/Pods-evalyDemoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-evalyDemoApp/Pods-evalyDemoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-evalyDemoApp/Pods-evalyDemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42FB908A26387BFB002C18D8 /* Sources */ = {
@@ -501,6 +650,7 @@
 		};
 		42FB90B926387BFC002C18D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB949F0EB312E93E0AB38470 /* Pods-evalyDemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -519,6 +669,7 @@
 		};
 		42FB90BA26387BFC002C18D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E056295FEA58F54BB49ACAC0 /* Pods-evalyDemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -537,6 +688,7 @@
 		};
 		42FB90BC26387BFC002C18D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 316E03A1E734F9571E579A78 /* Pods-evalyDemoAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -558,6 +710,7 @@
 		};
 		42FB90BD26387BFC002C18D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A048499BDCDF297D61197B8 /* Pods-evalyDemoAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -579,6 +732,7 @@
 		};
 		42FB90BF26387BFC002C18D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A76BEBAD6FEA61F3C420F4FD /* Pods-evalyDemoApp-evalyDemoAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -598,6 +752,7 @@
 		};
 		42FB90C026387BFC002C18D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0C6E3744B30DE03815E5A04 /* Pods-evalyDemoApp-evalyDemoAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

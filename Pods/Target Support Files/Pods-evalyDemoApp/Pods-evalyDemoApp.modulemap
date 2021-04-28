@@ -1,0 +1,6 @@
+framework module Pods_evalyDemoApp {
+  umbrella header "Pods-evalyDemoApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
